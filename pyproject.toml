@@ -1,0 +1,30 @@
+# [build-system]
+# requires = ["setuptools >= 61.0"]
+# build-backend = "setuptools.build_meta"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "py_transcriber"
+keywords = ["transcriber", "py", "transcription", "audio", "video"]
+authors = [
+    {name = "Sabari Rajan", email = "iamsabarirajan@gmail.com"}
+]
+dynamic = [
+    "version"
+]
+description = "Python Transcriber"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires_-python = ">=3.8"
+dependencies = [
+    "selenium",
+    "webdriver_manager"
+]
+long_description = "Python Transcriber"
+long_description_content_type = "text/markdown"
+
+[tool.hatch.version]
+path = "py_transcriber/__about__.py"
