@@ -20,8 +20,9 @@ readme = "README.md"
 license = {file = "LICENSE"}
 requires_-python = ">=3.8"
 dependencies = [
-    "selenium",
-    "webdriver_manager"
+    "Wave",
+    "moviepy",
+    "SpeechRecognition"
 ]
 long_description = "Python Transcriber"
 long_description_content_type = "text/markdown"
